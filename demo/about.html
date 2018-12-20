@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEBサイト制作なら「ウェーブエージェントドットコム」</title>
+  <!-- Bootstrap -->
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- my css -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!-- icons -->
+  <link rel="shortcut icon" href="imgs/1.png" type="image/x-icon">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" rel="stylesheet" /> 
+</head>
+
+<body>
+  <!-- head -->
+  <header id="lk_header">
+    <!-- トップ -->
+    <div class="top-bar hidden-xs hidden-sm text-center text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="top-bar-1 col-md-2">
+            <a href="javascript:void(0)" class="text-muted">
+              <i class="fab fa-twitter faa-wrench animated"></i>
+              <span>SNSリンク</span>
+              <span class="caret"></span>
+              <img src="imgs/微信.jpg" width="100px" alt="QR">
+            </a>
+          </div>
+          <div class="top-bar-2 col-md-6">
+            <i class="fa fa-phone fa-fw faa-pulse animated"></i>
+            <span>フリーダイヤル　8xxxx-5xxx-6XXX　（営業時間：9：00～18：00）</span>
+          </div>
+          <div class="top-bar-3 col-md-4">
+            <a class="btn btn-danger btn-sm" href="about.html" class="text-muted">お問い合わせフォーム</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- トップ -->
+    <!-- ナビメニュー -->
+    <nav class="navbar navbar-default navbar-static-top navbar-lk">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lk-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="lk-nav">
+          <ul class="nav navbar-nav text-center">
+            <li>
+              <a href="index.html">ホーム<br>
+                <span>Home</span></a>
+            </li>
+            <li>
+              <a href="service.html">サービス<br>
+                <span>Service</span></a>
+            </li>
+            <li>
+              <a href="works.html">制作実績<br>
+                <span>Works</span></a>
+            </li>
+            <li>
+              <a href="qa.html">よくあるご質問<br>
+                <span>Q&amp;A</span></a>
+            </li>
+            <li>
+              <a href="company.html">会社概要<br>
+                <span>Company</span></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- ナビメニュー -->
+  </header>
+  <!-- head end -->
+  <ol class="breadcrumb">
+    <li><a href="index.html">ホーム</a></li>
+    <li class="active">お問い合わせフォーム</li>
+  </ol>
+  <div id="main_contents">
+    <article>
+      <h2>お問い合わせ</h2>
+      <form action="mail.php" method="post" name="mail" id="mail">
+        <table class="table table-bordered">
+          <tbody>
+            <tr class="gray_back">
+              <th scope="row">氏名<strong>（必須）</strong></th>
+              <td><input name="name" type="text" required id="name" placeholder="例）山田　太郎" title="お名前を入力してください。"></td>
+            </tr>
+            <tr>
+              <th scope="row">ふりがな<strong>（必須）</strong></th>
+              <td><input name="kana" type="text" required id="kana" placeholder="例）やまだ　たろう" title="お名前のふりがなを入力してください。"></td>
+            </tr>
+            <tr class="gray_back">
+              <th scope="row">電話番号<strong>（必須）</strong></th>
+              <td><input name="tel" type="tel" required id="tel" placeholder="例）090-1234-5678" title="電話番号を半角英数字で入力してください。"
+                  maxlength="13">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">メールアドレス<strong>（必須）</strong></th>
+              <td><input name="email" type="email" required id="email" placeholder="例）t-yamada@test.com" title="メールアドレスを半角英数字で入力してください。"
+                  size="25"></td>
+            </tr>
+            <tr class="gray_back">
+              <th scope="row">サイトを知ったきっかけ</th>
+              <td>
+                <label>
+                  <input type="checkbox" name="chance" value="search" id="chance_0">
+                  検索サイト</label>
+                <br>
+                <label>
+                  <input type="checkbox" name="chance" value="mouth" id="chance_1">
+                  口コミ</label>
+                <br>
+                <label>
+                  <input type="checkbox" name="chance" value="magazine" id="chance_2">
+                  雑誌</label>
+                <br>
+                <label>
+                  <input type="checkbox" name="chance" value="other" id="chance_3">
+                  その他</label>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">性別</th>
+              <td>
+                <label>
+                  <input type="radio" name="sei" value="man" id="sei_0">
+                  男</label>
+                <br>
+                <label>
+                  <input type="radio" name="sei" value="woman" id="sei_1">
+                  女</label>
+              </td>
+            </tr>
+            <tr class="gray_back">
+              <th scope="row">用件</th>
+              <td><select name="title" id="title">
+                  <option value="web">WEBサイト制作について</option>
+                  <option value="manage">WEBマネジメントについて</option>
+                  <option value="recruit">採用について</option>
+                  <option value="site">このサイトについて</option>
+                  <option value="other">その他</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">質問内容<strong>（必須）</strong></th>
+              <td><textarea name="content" cols="45" rows="5" required id="content" placeholder="ご質問内容を入力してください。" title="500文字以内でご入力ください。"></textarea></td>
+            </tr>
+            <tr class="gray_back">
+              <th colspan="2" scope="row">
+                <input type="submit" name="submit" id="submit" value="送信">
+                <input type="reset" name="reset" id="reset" value="リセット"></th>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </article>
+  </div>
+  <!-- about end  -->
+  <!-- footer -->
+  <footer id="lk_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 access">
+          <h4><i class="fas fa-at"></i> E-mail: admin@Webagent.com </h4>
+          <h4>&#12306;XXX-XXXX</h4>
+          <h4><i class="fas fa-universal-access"></i> XXXX 県XXXX 市XXXX 区XXXX 町1-2-3</h4>
+        </div>
+        <div class="col-md-6 three">
+          <h5><i class="fas fa-comments fa-2x"></i>Social Network</h5>
+          <a href="javascript:void(0);">
+            <img src="imgs/wexin.jpg" alt="" width="55px" data-toggle="tooltip" data-placement="left" title="チャット">
+            <img src="imgs/weibo.jpg" alt="" width="55px" data-toggle="tooltip" data-placement="left" title="ブログ">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom">
+      <p><a href="#"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><br>TOP</a></p>
+    </div>
+  </footer>
+  <div class="wrapper">
+    <p id="copy">Copyright (C) WebAgent.com. All Rights Reserved.</p>
+  </div>
+  <!-- footer end -->
+
+  <!-- jQuery  -->
+  <script src="lib/jquery/jquery-3.3.1.js"></script>
+  <!-- Bootstrap.js -->
+  <script src="lib/bootstrap/js/bootstrap.js"></script>  
+</body>
+
+</html>

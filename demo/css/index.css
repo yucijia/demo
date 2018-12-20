@@ -1,0 +1,227 @@
+@charset 'utf-8';
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+}
+
+/********************共通部*********************/
+/* ボタンのカスタマイズ */
+.btn-register {
+    color: #ffffff;
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #ffffff;
+    background-color: #088DF2;
+    border-color: #F4F7F7;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register .badge {
+    color: #0AB4F7;
+    background-color: #ffffff;
+}
+
+/**************************トップ部*******************************/
+.top-bar {
+    height: 40px;
+    border: 1px solid rgb(218, 211, 211);
+    line-height: 39px;
+}
+
+.top-bar .container .row>div+div {
+    border-left: 1px solid rgb(218, 211, 211);
+}
+
+.top-bar .container .row .top-bar-1 a {
+    position: relative;
+}
+
+.top-bar .container .row .top-bar-1 a img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -10px;
+    z-index: 9999;
+}
+
+.top-bar .container .row .top-bar-1 a:hover img {
+    display: block;
+}
+
+/*************************ナビメニュー部*******************************/
+#lk_header .navbar-lk {
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+
+#lk_header .navbar-lk .navbar-header {
+    height: 0px;
+    padding: 5px 5px;
+}
+
+#lk_header .navbar-lk .navbar-nav a {
+    height: 55px;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+#lk_header .navbar-lk .navbar-nav a span {
+    display: block;
+    margin-top: 5px;
+}
+
+#lk_header .navbar-lk .navbar-nav li.active a,
+#lk_header .navbar-lk .navbar-nav li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #0AB4F7;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#lk_header .navbar-lk .navbar-toggle {
+    margin-top: 5px;
+}
+
+/*********************スライド********************/
+#lk_carousel {
+    margin: 0 auto;
+}
+
+#lk_carousel .item {
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#lk_carousel .item img {
+    width: 100%;
+    min-height: 150px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/*********************about********************/
+#lk_about,
+#lk_hot {
+    padding: 20px 0;
+}
+
+#lk_about .title img,
+#lk_hot .title img {
+    padding-bottom: 15px;
+}
+
+#lk_about .row p {
+    line-height: 29px;
+    font-size: 15px;
+}
+
+#lk_about .row p span {
+    color: #FF5722;
+}
+
+#lk_about .row p em {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#lk_about .row ul {
+    padding: 0px;
+}
+
+/*********************info********************/
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lk_info .info {
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+    margin-bottom: 20px;
+    border: 1px solid rgb(218, 211, 211);
+    padding: 15px;
+}
+
+#lk_info h2 {
+    text-align: center;
+    background-color: #B0BEC5;
+}
+
+#lk_info .info dt {
+    color: #FF5722;
+}
+
+#lk_info .info dd {
+    border-bottom: 1px solid rgb(218, 211, 211);
+    line-height: 40px;
+}
+
+/*********************footer********************/
+#lk_footer {
+    width: 100%;
+    font-size: 16px;
+}
+
+#lk_footer .container {
+    text-align: center;
+}
+
+#lk_footer .three a {
+    margin-right: 15px;
+}
+
+#lk_footer .three a img:nth-child(1) {
+    width: 100px;
+}
+
+#lk_footer .three a img:nth-child(2) {
+    width: 90px;
+}
+
+.wrapper {
+    background-color: #000;
+    height: 50px;
+}
+
+.wrapper p {
+    color: white;
+    text-align: center;
+    line-height: 55px;
+}
+
+.fixed-bottom {
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    right: 0px;
+    background-color: #5bc0de;
+    border-radius: 15%;
+}
+
+.fixed-bottom p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.fixed-bottom p a {
+    color: #fff;
+    text-decoration: none;
+}
